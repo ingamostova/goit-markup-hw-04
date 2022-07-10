@@ -83,10 +83,21 @@ img {
 
 .contacts-link,
 .nav-link {
+  display: block;
   color: var(--primary-color);
   font-weight: 500;
   line-height: 1.14;
   text-decoration: none;
+}
+
+.mail-icon, .telephone-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  position: relative;
+  top: 3px;
+  fill: currentColor;
+
 }
 
 .contacts-link {
@@ -155,6 +166,18 @@ img {
 .section-hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ), 
+  url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-btn {
@@ -192,6 +215,23 @@ img {
 
 .pros-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.pros-icon-container {
+  width: 270px;
+  height: 120px;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+
+.pros-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .pros-title {
@@ -237,9 +277,9 @@ img {
 
 .team-container {
   padding-top: 30px;
-  padding-right: 10px;
+  padding-right: 32px;
   padding-bottom: 30px;
-  padding-left: 10px;
+  padding-left: 32px;
 }
 
 .staff-title {
@@ -251,9 +291,40 @@ img {
 }
 
 .staff-position {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
 }
+
+.social-list {
+  display: flex;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
+}
+
+.social-link:hover {
+  background-color: var(--secondary-title-color);
+  border-radius: 50%;
+}
+
+.social-link:hover .social-icon {
+fill: var(--hero-color)
+} 
 
 /* Футер */
 

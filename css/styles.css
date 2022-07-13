@@ -95,12 +95,13 @@ img {
   width: 16px;
   height: 16px;
   margin-right: 10px;
-  position: relative;
-  top: 3px;
   fill: currentColor;
 }
 
 .contacts-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -173,7 +174,7 @@ img {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center
 }
 
 .hero-btn {
@@ -217,10 +218,9 @@ img {
 .pros-icon-container {
   width: 270px;
   height: 120px;
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -262,7 +262,7 @@ img {
 .team-list-item {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--hero-color);
   text-align: center;
 }
@@ -301,10 +301,11 @@ img {
 }
 
 .social-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
 }
 
 .social-icon {
@@ -350,10 +351,11 @@ img {
 }
 
 .clients-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -377,7 +379,7 @@ img {
   fill: var(--secondary-title-color);
 }
 
-.clients-link:hover .clients-icon {
+.clients-link:hover .clients-icon, .clients-link:focus .clients-icon {
   fill: var(--secondary-title-color);
 }
 
@@ -432,11 +434,9 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
-.join-container {
-  padding-top: 12px;
-}
 
 .join-title {
   margin-bottom: 20px;
@@ -457,10 +457,11 @@ img {
 }
 
 .join-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -527,8 +528,7 @@ img {
   gap: 30px;
 }
 
-.portfolio-list-item:hover,
-.portfolio-list-item:focus {
+.portfolio-link:hover, .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -558,5 +558,6 @@ img {
 }
 
 .portfolio-link {
+  display: block;
   text-decoration: none;
 }
